@@ -43,7 +43,7 @@ const nextConfig: NextConfig = {
     ];
   },
 
-  // Redirects for www subdomain handling
+  // Redirects for www subdomain and backward compatibility
   async redirects() {
     return [
       {
@@ -55,6 +55,11 @@ const nextConfig: NextConfig = {
           },
         ],
         destination: 'https://ucuzataksi.net/:path*',
+        permanent: true,
+      },
+      {
+        source: '/anasayfa',
+        destination: '/',
         permanent: true,
       },
     ]
