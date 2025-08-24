@@ -2,9 +2,9 @@ import { NextResponse } from 'next/server'
 import type { NextRequest } from 'next/server'
 
 export function middleware(request: NextRequest) {
-  // Ana sayfaya gelen ziyaretçileri /anasayfa'ya yönlendir
-  if (request.nextUrl.pathname === '/') {
-    return NextResponse.redirect(new URL('/anasayfa', request.url))
+  // /anasayfa'ya gelen ziyaretçileri ana sayfaya yönlendir
+  if (request.nextUrl.pathname === '/anasayfa') {
+    return NextResponse.redirect(new URL('/', request.url))
   }
   
   return NextResponse.next()
@@ -13,8 +13,8 @@ export function middleware(request: NextRequest) {
 export const config = {
   matcher: [
     /*
-     * Sadece root path (/) için middleware çalıştır
+     * /anasayfa path'i için middleware çalıştır
      */
-    '/'
+    '/anasayfa'
   ],
 }

@@ -43,8 +43,8 @@ export const NavbarLogo = () => {
   return (
     <button 
       onClick={() => {
-        if (window.location.pathname !== '/anasayfa') {
-          window.location.href = '/anasayfa'
+        if (window.location.pathname !== '/') {
+          window.location.href = '/'
         } else {
           window.scrollTo({ top: 0, behavior: 'smooth' })
         }

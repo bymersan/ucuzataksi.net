@@ -1,13 +1,13 @@
 const scrollToSection = (sectionId: string) => {
-  // Eğer /anasayfa sayfasında değilsek önce oraya git
-  if (window.location.pathname !== '/anasayfa') {
-    window.location.href = '/anasayfa'
+  // Eğer ana sayfada değilsek önce oraya git
+  if (window.location.pathname !== '/') {
+    window.location.href = '/'
     // URL değişimi sonrası scroll için kısa bir bekleme
     setTimeout(() => {
       document.getElementById(sectionId)?.scrollIntoView({ behavior: 'smooth' })
     }, 100)
   } else {
-    // Zaten /anasayfa'daysa direkt scroll yap
+    // Zaten ana sayfadaysa direkt scroll yap
     document.getElementById(sectionId)?.scrollIntoView({ behavior: 'smooth' })
   }
 }
@@ -16,8 +16,8 @@ export const navigationItems = [
   {
     name: "Ana Sayfa",
     action: () => {
-      if (window.location.pathname !== '/anasayfa') {
-        window.location.href = '/anasayfa'
+      if (window.location.pathname !== '/') {
+        window.location.href = '/'
       } else {
         window.scrollTo({ top: 0, behavior: 'smooth' })
       }
