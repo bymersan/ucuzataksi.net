@@ -19,7 +19,7 @@ const nextConfig: NextConfig = {
     ],
   },
   
-  // Headers for caching and redirects
+  // Headers for caching
   async headers() {
     return [
       {
@@ -41,28 +41,6 @@ const nextConfig: NextConfig = {
         ]
       }
     ];
-  },
-
-  // Redirects for www subdomain and backward compatibility
-  async redirects() {
-    return [
-      {
-        source: '/:path*',
-        has: [
-          {
-            type: 'host',
-            value: 'www.ucuzataksi.net',
-          },
-        ],
-        destination: 'https://ucuzataksi.net/:path*',
-        permanent: true,
-      },
-      {
-        source: '/anasayfa',
-        destination: '/',
-        permanent: true,
-      },
-    ]
   }
 };
 
