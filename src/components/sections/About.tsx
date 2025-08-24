@@ -40,8 +40,8 @@ export default function About() {
                   </div>
                 </div>
                 <div className="absolute bottom-6 left-6 text-white z-30">
-                  <h3 className="text-2xl font-bold mb-2">UcuzaTaksi</h3>
-                  <p className="text-sm opacity-90">İzmir&apos;in Güvenilir Taksi Hizmeti</p>
+                  <h3 className="text-2xl font-bold mb-2">UcuzaTaksi - İzmir Korsan Taksi</h3>
+                  <p className="text-sm opacity-90">Korsan Taksi İzmir&apos;de Ucuza Taksi Çözümünüz</p>
                 </div>
               </Card>
               
@@ -60,11 +60,11 @@ export default function About() {
           <div className="space-y-6">
             <div>
               <h2 className="text-3xl font-black lg:text-5xl mb-4">
-                İzmir&apos;de <span className="text-primary">Güvenilir ve Ekonomik</span> Taksi Hizmeti
+                İzmir Korsan Taksi ile <span className="text-primary">Ucuza Taksi</span> Hizmeti
               </h2>
               <p className="text-muted-foreground text-lg">
-                Yılların tecrübesiyle İzmir ve çevresinde 7/24 kesintisiz taksi hizmeti sunuyoruz. 
-                Müşteri memnuniyeti odaklı yaklaşımımızla, güvenli ve konforlu yolculuk deneyimi sağlıyoruz.
+                İzmir korsan taksi olarak yılların tecrübesiyle korsan taksi İzmir ve çevresinde 7/24 ucuza taksi hizmeti sunuyoruz. 
+                Korsan taksi İzmir&apos;de müşteri memnuniyeti odaklı yaklaşımımızla, güvenli ve ekonomik ulaşım sağlıyoruz.
               </p>
             </div>
 
@@ -111,27 +111,27 @@ export default function About() {
             </div>
 
             <div className="pt-4">
-              <h3 className="font-bold text-xl mb-3">Neden Bizi Tercih Etmelisiniz?</h3>
+              <h3 className="font-bold text-xl mb-3">Neden İzmir Korsan Taksi Tercih Edilmeli?</h3>
               <ul className="space-y-2 text-muted-foreground">
                 <li className="flex items-start">
                   <span className="text-primary mr-2">✓</span>
-                  Uygun fiyat garantisi ile ekonomik yolculuk
+                  İzmir korsan taksi ile ucuza taksi garantisi
                 </li>
                 <li className="flex items-start">
                   <span className="text-primary mr-2">✓</span>
-                  7/24 kesintisiz hizmet ve anında araç tahsisi
+                  Korsan taksi İzmir&apos;de 7/24 kesintisiz hizmet
                 </li>
                 <li className="flex items-start">
                   <span className="text-primary mr-2">✓</span>
-                  Deneyimli ve güler yüzlü sürücü kadrosu
+                  Ucuza taksi ile havaalanı transferi ve şehir içi ulaşım
                 </li>
                 <li className="flex items-start">
                   <span className="text-primary mr-2">✓</span>
-                  Temiz ve bakımlı araç filosu
+                  Korsan taksi İzmir deneyimli sürücü kadrosu
                 </li>
                 <li className="flex items-start">
                   <span className="text-primary mr-2">✓</span>
-                  Evcil hayvan ve kargo taşıma gibi özel hizmetler
+                  İzmir korsan taksi temiz araç filosu ve özel hizmetler
                 </li>
               </ul>
             </div>

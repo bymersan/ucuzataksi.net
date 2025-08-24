@@ -47,9 +47,12 @@ export default function Footer() {
         <Separator className="my-8" />
 
         {/* Bottom Footer */}
-        <div className="flex justify-center items-center">
+        <div className="flex flex-col items-center gap-2">
           <p className="text-sm text-muted-foreground">
-            © {currentYear} UcuzaTaksi. Tüm hakları saklıdır.
+            © {currentYear} UcuzaTaksi - İzmir Korsan Taksi | Korsan Taksi İzmir | Ucuza Taksi
+          </p>
+          <p className="text-xs text-muted-foreground">
+            İzmir&apos;de 7/24 korsan taksi ve ucuza taksi hizmeti
           </p>
         </div>
       </div>

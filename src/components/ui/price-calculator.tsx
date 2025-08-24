@@ -5,7 +5,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 import { Button } from "@/components/ui/button"
 import { Calculator, MapPin, MessageSquare } from "lucide-react"
-import { trackPriceCalculation, trackWhatsAppClick } from "@/lib/gtm-events"
+import { trackWhatsAppClick } from "@/lib/gtm-events"
 
 const IZMIR_DISTRICTS = [
   { id: 'aliaga', name: 'Aliağa' },
@@ -45,36 +45,6 @@ interface PriceCalculatorProps {
   compact?: boolean
 }
 
-// Estimated prices between districts (in TRY)
-const calculateEstimatedPrice = (from: string, to: string): number => {
-  // Base prices for different route types
-  const SAME_DISTRICT = 35
-  const NEARBY_DISTRICTS = 60
-  const MEDIUM_DISTANCE = 100
-  const LONG_DISTANCE = 150
-  const AIRPORT_ROUTES = 120
-  
-  // Same district
-  if (from === to) return SAME_DISTRICT
-  
-  // Airport routes (higher value)
-  if (from === 'gaziemir' || to === 'gaziemir') return AIRPORT_ROUTES
-  
-  // Central districts (nearby)
-  const centralDistricts = ['konak', 'karsiliyaka', 'bornova', 'balcova', 'bayrakli']
-  if (centralDistricts.includes(from) && centralDistricts.includes(to)) {
-    return NEARBY_DISTRICTS
-  }
-  
-  // Long distance routes
-  const outerDistricts = ['aliaga', 'bergama', 'cesme', 'dikili', 'foca', 'karaburun', 'odemis', 'selcuk', 'tire']
-  if (outerDistricts.includes(from) || outerDistricts.includes(to)) {
-    return LONG_DISTANCE
-  }
-  
-  return MEDIUM_DISTANCE
-}
-
 export function PriceCalculator({ className = "", compact = false }: PriceCalculatorProps) {
   const [fromDistrict, setFromDistrict] = useState<string>("")
   const [toDistrict, setToDistrict] = useState<string>("")
@@ -87,20 +57,15 @@ export function PriceCalculator({ className = "", compact = false }: PriceCalcul
 
     const fromName = IZMIR_DISTRICTS.find(d => d.id === fromDistrict)?.name
     const toName = IZMIR_DISTRICTS.find(d => d.id === toDistrict)?.name
-    const estimatedPrice = calculateEstimatedPrice(fromDistrict, toDistrict)
     
-    // Track price calculation event for GTM/Google Ads
-    trackPriceCalculation(fromName!, toName!, estimatedPrice)
+    // Track WhatsApp click conversion (without showing price)
+    trackWhatsAppClick('price_calculator_hero')
     
-    // Track WhatsApp click conversion
-    trackWhatsAppClick('price_calculator_hero', estimatedPrice)
-    
-    // Enhanced message with estimated price
+    // Simple message without estimated price
     const message = `Merhaba! ucuzataksi.net fiyat hesaplama aracından geliyorum.
 
 📍 Kalkış: ${fromName}
 📍 Varış: ${toName}
-💰 Tahmini Fiyat: ₺${estimatedPrice}
 
 Bu güzergah için taksi rezervasyonu yapmak istiyorum. En uygun fiyat teklifinizi alabilir miyim?
 
@@ -122,13 +87,6 @@ Bu güzergah için taksi rezervasyonu yapmak istiyorum. En uygun fiyat teklifini
     setIsCalculating(false)
   }
 
-  // Calculate and show estimated price
-  const getEstimatedPrice = () => {
-    if (!fromDistrict || !toDistrict) return null
-    return calculateEstimatedPrice(fromDistrict, toDistrict)
-  }
-
-  const estimatedPrice = getEstimatedPrice()
 
   return (
     <Card className={`w-full max-w-sm bg-background/95 backdrop-blur-sm border-primary/20 ${className}`}>
@@ -184,16 +142,6 @@ Bu güzergah için taksi rezervasyonu yapmak istiyorum. En uygun fiyat teklifini
           </div>
         </div>
 
-        {/* Estimated Price Display */}
-        {estimatedPrice && (
-          <div className="bg-primary/10 border border-primary/20 rounded-lg p-3 text-center">
-            <p className="text-sm font-medium text-muted-foreground">Tahmini Fiyat</p>
-            <p className="text-2xl font-bold text-primary">₺{estimatedPrice}</p>
-            <p className="text-xs text-muted-foreground mt-1">
-              * Kesin fiyat WhatsApp&apos;tan öğrenebilirsiniz
-            </p>
-          </div>
-        )}
 
         <div className="flex flex-col gap-1.5">
           <Button 
@@ -203,7 +151,7 @@ Bu güzergah için taksi rezervasyonu yapmak istiyorum. En uygun fiyat teklifini
             size={compact ? "sm" : "default"}
           >
             <MessageSquare className="h-4 w-4 mr-2" />
-            {isCalculating ? "Hesaplando..." : estimatedPrice ? `₺${estimatedPrice} - WhatsApp'ta Rezervasyon` : "Fiyat Hesapla"}
+            {isCalculating ? "Hesaplando..." : "Fiyat Hesapla"}
           </Button>
           
           <Button 

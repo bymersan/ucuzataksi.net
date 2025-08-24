@@ -8,38 +8,38 @@ import { useWhatsApp } from "@/hooks/use-whatsapp"
 
 const services = [
   {
-    title: "Şehir İçi Transfer",
+    title: "İzmir Korsan Taksi - Şehir İçi",
     icon: MapPin,
-    description: "İzmir ve tüm ilçelerine hızlı, güvenli ve ekonomik ulaşım",
+    description: "Korsan taksi İzmir ve tüm ilçelerine ucuza taksi hizmeti",
     features: [
-      "7/24 kesintisiz hizmet",
-      "Tüm İzmir ilçelerine servis",
-      "Uygun fiyat garantisi",
-      "Deneyimli sürücüler"
+      "İzmir korsan taksi 7/24 hizmet",
+      "Korsan taksi İzmir tüm ilçeler",
+      "Ucuza taksi fiyat garantisi",
+      "Güvenilir korsan taksi sürücüleri"
     ],
     popular: false
   },
   {
-    title: "Havaalanı Transferi",
+    title: "Havaalanı Korsan Taksi İzmir",
     icon: Calendar,
-    description: "Adnan Menderes Havalimanı'na zamanında ve konforlu transfer",
+    description: "İzmir korsan taksi ile Adnan Menderes Havaalanı ucuza transfer",
     features: [
-      "24 saat hizmet",
-      "Uçuş takibi",
-      "Sabit fiyat garantisi",
-      "Bagaj yardımı"
+      "Korsan taksi İzmir 24 saat",
+      "İzmir havaalanı ucuza taksi",
+      "Korsan taksi sabit fiyat",
+      "Bagaj yardımı dahil"
     ],
     popular: true
   },
   {
-    title: "7/24 Acil Transfer",
+    title: "7/24 Korsan Taksi İzmir",
     icon: Star,
-    description: "Gece gündüz demeden acil transfer ihtiyaçlarınız için yanınızdayız",
+    description: "Korsan taksi İzmir'de gece gündüz ucuza taksi hizmeti",
     features: [
-      "Anında çağrı yanıtı",
-      "Acil durum desteği",
-      "Hızlı araç tahsisi",
-      "Güvenilir hizmet"
+      "İzmir korsan taksi anında çağrı",
+      "Acil korsan taksi İzmir",
+      "Hızlı ucuza taksi tahsisi",
+      "Güvenilir korsan taksi hizmeti"
     ],
     popular: false
   },
