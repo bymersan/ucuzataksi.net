@@ -7,8 +7,7 @@ import {
   Phone,
   MessageCircle,
   Mail,
-  Clock, 
-  Users, 
+  Clock,
   Shield,
   Star,
   MapPin,
@@ -188,7 +187,7 @@ export default function ContactForm() {
                 
                 <div className="pt-4 border-t border-border/50">
                   <p className="text-sm text-muted-foreground">
-                    <strong>Ve daha fazlası!</strong> İzmir'in tüm ilçelerine hizmet veriyoruz.
+                    <strong>Ve daha fazlası!</strong> İzmir&apos;in tüm ilçelerine hizmet veriyoruz.
                   </p>
                 </div>
               </CardContent>
