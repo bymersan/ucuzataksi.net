@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-This is a Next.js 15.4.4 marketing website with TypeScript, Tailwind CSS, and shadcn/ui components. The project uses the App Router pattern and includes features like contact forms, theme switching, and various marketing sections.
+This is a Next.js 15.5.0 marketing website with TypeScript, Tailwind CSS, and shadcn/ui components. The project uses the App Router pattern and includes features like contact forms, theme switching, and various marketing sections.
 
 ## Development Commands
 
@@ -28,7 +28,7 @@ npm run lint
 ## Project Architecture
 
 ### Tech Stack
-- **Framework**: Next.js 15.4.4 with App Router
+- **Framework**: Next.js 15.5.0 with App Router
 - **Language**: TypeScript with strict mode enabled
 - **Styling**: Tailwind CSS with custom theme configuration
 - **Components**: shadcn/ui components (Radix UI primitives)

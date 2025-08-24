@@ -5,10 +5,10 @@ export async function POST(request: NextRequest) {
   try {
     const { name, email, phone, message } = await request.json()
 
-    // Environment variables kontrolü
-    console.log('Gmail user:', process.env.GMAIL_USER)
-    console.log('Gmail pass exists:', !!process.env.GMAIL_PASS)
-    console.log('Gmail pass length:', process.env.GMAIL_PASS?.length)
+    // Validate environment variables
+    if (!process.env.GMAIL_USER || !process.env.GMAIL_PASS) {
+      throw new Error('Gmail credentials not configured')
+    }
 
     // Gmail SMTP transporter oluştur
     const transporter = nodemailer.createTransport({
@@ -54,7 +54,7 @@ export async function POST(request: NextRequest) {
           </div>
 
           <div style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #ddd; font-size: 12px; color: #666; text-align: center;">
-            Bu mesaj burakozerweb.com iletişim formundan gönderilmiştir.
+            Bu mesaj ucuzataksi.net iletişim formundan gönderilmiştir.
           </div>
         </div>
       `
@@ -62,7 +62,13 @@ export async function POST(request: NextRequest) {
 
     return NextResponse.json({ 
       success: true, 
-      message: 'Email başarıyla gönderildi' 
+      message: 'Email başarıyla gönderildi',
+      // Include tracking data for client-side event firing
+      tracking: {
+        form_submitted: true,
+        form_type: 'contact',
+        timestamp: new Date().toISOString()
+      }
     })
 
   } catch (error) {

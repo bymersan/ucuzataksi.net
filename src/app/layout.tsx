@@ -4,8 +4,9 @@ import Script from "next/script";
 import "./globals.css";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
-import WhatsAppButton from "@/components/ui/whatsapp-button";
+import FloatingContactButtons from "@/components/ui/floating-contact-buttons";
 import { ThemeProvider } from "@/components/providers/theme-provider";
+import { GTMProvider } from "@/components/providers/gtm-provider";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -51,7 +52,7 @@ export default function RootLayout({
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
         <noscript>
           <iframe 
-            src="https://www.googletagmanager.com/ns.html?id=GTM-KR87R82X"
+            src="https://www.googletagmanager.com/ns.html?id=GTM-PT5MRW88"
             height="0" 
             width="0" 
             style={{display:"none",visibility:"hidden"}}
@@ -63,10 +64,12 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <Header />
-          {children}
-          <Footer />
-          <WhatsAppButton />
+          <GTMProvider>
+            <Header />
+            {children}
+            <Footer />
+            <FloatingContactButtons />
+          </GTMProvider>
         </ThemeProvider>
 
         {/* Google Tag Manager */}
@@ -78,7 +81,7 @@ export default function RootLayout({
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-KR87R82X');`,
+})(window,document,'script','dataLayer','GTM-PT5MRW88');`,
           }}
         />
         

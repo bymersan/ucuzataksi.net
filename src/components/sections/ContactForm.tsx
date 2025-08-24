@@ -17,7 +17,7 @@ import {
 import { useWhatsApp } from "@/hooks/use-whatsapp"
 
 export default function ContactForm() {
-  const { trackWhatsAppClick, contactInfo } = useWhatsApp()
+  const { trackWhatsAppClick, trackPhoneClickEvent, contactInfo } = useWhatsApp()
 
   const features = [
     {
@@ -92,7 +92,13 @@ export default function ContactForm() {
                   <Phone className="w-5 h-5 text-primary mt-1" />
                   <div>
                     <p className="font-medium mb-1">Telefon</p>
-                    <p className="text-muted-foreground">{contactInfo.phone.display}</p>
+                    <a 
+                      href={`tel:${contactInfo.phone.call}`}
+                      className="text-muted-foreground hover:text-primary transition-colors"
+                      onClick={() => trackPhoneClickEvent(contactInfo.phone.call, 'contact_form_phone')}
+                    >
+                      {contactInfo.phone.display}
+                    </a>
                     <p className="text-sm text-muted-foreground">Anında arayın</p>
                   </div>
                 </div>

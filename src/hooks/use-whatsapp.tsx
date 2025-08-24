@@ -1,21 +1,16 @@
 "use client"
 
 import { contactInfo } from "@/config/contact-info"
-
-declare global {
-  interface Window {
-    dataLayer: Array<Record<string, unknown>>;
-  }
-}
+import { trackWhatsAppClick as trackWhatsAppGTM, trackPhoneClick } from "@/lib/gtm-events"
 
 export function useWhatsApp() {
   const trackWhatsAppClick = (location: string) => {
-    if (typeof window !== 'undefined' && window.dataLayer) {
-      window.dataLayer.push({
-        event: 'whatsapp_click',
-        button_location: location
-      })
-    }
+    // Use the new GTM events system
+    trackWhatsAppGTM(location)
+  }
+
+  const trackPhoneClickEvent = (phoneNumber: string, location: string) => {
+    trackPhoneClick(phoneNumber, location)
   }
 
   const openWhatsApp = (message?: string, location?: string) => {
@@ -44,6 +39,7 @@ Mesaj: ${formData.message}`
 
   return {
     trackWhatsAppClick,
+    trackPhoneClickEvent,
     openWhatsApp,
     formatWhatsAppMessage,
     contactInfo
