@@ -25,8 +25,12 @@ export const metadata: Metadata = {
   title: "İzmir Ucuz Korsan Taksi Hizmetleri - Ekonomik | Ucuzataksi.net",
   description: "İzmir&apos;de ucuz, güvenli ve 7/24 korsan taksi hizmeti sunuyoruz. Havaalanı transferi, şehir içi ulaşım, evcil hayvan ve kargo taşımacılığı.",
   icons: {
-    icon: '/assets/logos/ucuzataksilogo.png',
-    shortcut: '/assets/logos/ucuzataksilogo.png',
+    icon: [
+      {
+        url: '/favicon-source.svg',
+        type: 'image/svg+xml',
+      }
+    ],
     apple: '/assets/logos/ucuzataksilogo.png',
   },
 };
