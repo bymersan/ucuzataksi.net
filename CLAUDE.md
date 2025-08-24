@@ -4,69 +4,59 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-This is a Next.js 15.5.0 marketing website with TypeScript, Tailwind CSS, and shadcn/ui components. The project uses the App Router pattern and includes features like contact forms, theme switching, and various marketing sections.
+A Turkish taxi service marketing website (UcuzaTaksi.net) built with Next.js 15.5.0, featuring SEO optimization, GTM tracking, contact forms, and WhatsApp integration. The site is focused on İzmir "korsan taksi" (unofficial taxi) services.
 
 ## Development Commands
 
 ```bash
-# Start development server with Turbopack (recommended)
+# Development with Turbopack (fast refresh)
 npm run dev
 
-# Start development server without Turbopack
+# Development without Turbopack  
 npm run dev-normal
 
-# Build for production
+# Production build
 npm run build
 
 # Start production server
 npm start
 
-# Run linting
+# Linting
 npm run lint
 ```
 
-## Project Architecture
+## Core Architecture
 
-### Tech Stack
-- **Framework**: Next.js 15.5.0 with App Router
-- **Language**: TypeScript with strict mode enabled
-- **Styling**: Tailwind CSS with custom theme configuration
-- **Components**: shadcn/ui components (Radix UI primitives)
-- **Animations**: Framer Motion
-- **Forms**: React Hook Form with Zod validation
-- **Email**: Nodemailer for contact form submission
-- **Icons**: Lucide React
+### Business Logic & Tracking
+- **GTM Integration**: Comprehensive Google Tag Manager event tracking via `/src/lib/gtm-events.ts`
+- **WhatsApp Integration**: Click-to-WhatsApp functionality with message templates in `/src/hooks/use-whatsapp.tsx`
+- **Contact System**: Nodemailer-based email forms with Gmail SMTP in `/src/app/api/contact/route.ts`
+- **SEO**: Structured data schemas, meta tags, and Open Graph configuration in `/src/lib/schema.ts` and layout.tsx
 
-### Directory Structure
-- `/src/app/` - Next.js App Router pages and API routes
-  - `layout.tsx` - Root layout with theme provider and global components
-  - `page.tsx` - Homepage with all marketing sections
-  - `/api/contact/` - Contact form email API endpoint
-- `/src/components/` - React components organized by type
-  - `/ui/` - shadcn/ui reusable components
-  - `/sections/` - Page section components (Hero, About, Services, etc.)
-  - `/layout/` - Layout components (Header, Footer)
-  - `/providers/` - Context providers (theme)
-- `/src/lib/` - Utility functions
-- `/src/hooks/` - Custom React hooks
-- `/src/config/` - Configuration files
+### Key Hooks & Utilities
+- `use-form-tracking.tsx` - Form interaction analytics
+- `use-scroll-tracking.tsx` - User engagement metrics  
+- `use-mobile.tsx` - Mobile device detection
+- `gtm-events.ts` - Conversion tracking, enhanced conversions, lead generation events
 
-### Key Configuration Files
-- `components.json` - shadcn/ui configuration
-- `tailwind.config.ts` - Tailwind CSS with custom theme variables
-- `tsconfig.json` - TypeScript configuration with path aliases (@/*)
-- `next.config.ts` - Next.js configuration with image optimization and caching headers
+### Component Architecture
+- **Sections**: Marketing sections (Hero, Services, FAQ, etc.) in `/src/components/sections/`
+- **UI Components**: shadcn/ui components with "new-york" style variant
+- **Providers**: Theme provider (next-themes) and GTM provider for analytics
 
 ### Environment Variables
-The contact form API requires Gmail SMTP credentials:
-- `GMAIL_USER` - Gmail email address
+Required for contact form functionality:
+- `GMAIL_USER` - Gmail address for sending emails
 - `GMAIL_PASS` - Gmail App Password (not regular password)
 
-### Path Aliases
-- `@/*` maps to `./src/*` for clean imports
+### Styling System
+- Tailwind CSS with CSS variables for theming
+- Dark mode support via next-themes
+- Custom theme colors defined in globals.css
+- Responsive design with mobile-first approach
 
-### Styling Approach
-- Uses CSS variables for theming (defined in globals.css)
-- Tailwind CSS for utility-first styling
-- shadcn/ui components use the "new-york" style variant
-- Dark mode support via next-themes provider
+### Performance Optimizations
+- Image optimization with WebP/AVIF formats
+- Turbopack for faster development builds
+- Aggressive caching headers for static assets
+- Lazy loading for off-screen components

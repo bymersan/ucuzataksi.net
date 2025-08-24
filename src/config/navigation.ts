@@ -1,7 +1,13 @@
 export const navigationItems = [
   {
     name: "Ana Sayfa",
-    action: () => window.scrollTo({ top: 0, behavior: 'smooth' }),
+    action: () => {
+      if (window.location.pathname !== '/anasayfa') {
+        window.location.href = '/anasayfa'
+      } else {
+        window.scrollTo({ top: 0, behavior: 'smooth' })
+      }
+    },
   },
   {
     name: "Hakkımızda", 

@@ -42,7 +42,13 @@ export const NavItems = ({ items }: { items: { name: string; action: () => void 
 export const NavbarLogo = () => {
   return (
     <button 
-      onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+      onClick={() => {
+        if (window.location.pathname !== '/anasayfa') {
+          window.location.href = '/anasayfa'
+        } else {
+          window.scrollTo({ top: 0, behavior: 'smooth' })
+        }
+      }}
       className="flex items-center hover:opacity-80 transition-opacity"
     >
       <Image
