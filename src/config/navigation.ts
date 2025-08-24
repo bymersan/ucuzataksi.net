@@ -1,3 +1,17 @@
+const scrollToSection = (sectionId: string) => {
+  // Eğer /anasayfa sayfasında değilsek önce oraya git
+  if (window.location.pathname !== '/anasayfa') {
+    window.location.href = '/anasayfa'
+    // URL değişimi sonrası scroll için kısa bir bekleme
+    setTimeout(() => {
+      document.getElementById(sectionId)?.scrollIntoView({ behavior: 'smooth' })
+    }, 100)
+  } else {
+    // Zaten /anasayfa'daysa direkt scroll yap
+    document.getElementById(sectionId)?.scrollIntoView({ behavior: 'smooth' })
+  }
+}
+
 export const navigationItems = [
   {
     name: "Ana Sayfa",
@@ -11,22 +25,22 @@ export const navigationItems = [
   },
   {
     name: "Hakkımızda", 
-    action: () => document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' }),
+    action: () => scrollToSection('about'),
   },
   {
     name: "Hizmetler",
-    action: () => document.getElementById('services')?.scrollIntoView({ behavior: 'smooth' }),
+    action: () => scrollToSection('services'),
   },
   {
     name: "Fiyatlar",
-    action: () => document.getElementById('benefits')?.scrollIntoView({ behavior: 'smooth' }),
+    action: () => scrollToSection('benefits'),
   },
   {
     name: "Referanslar",
-    action: () => document.getElementById('testimonials')?.scrollIntoView({ behavior: 'smooth' }),
+    action: () => scrollToSection('testimonials'),
   },
   {
     name: "İletişim",
-    action: () => document.getElementById('contact-form')?.scrollIntoView({ behavior: 'smooth' }),
+    action: () => scrollToSection('contact-form'),
   },
 ]
