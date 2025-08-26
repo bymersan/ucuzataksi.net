@@ -2,10 +2,10 @@ export const localBusinessSchema = {
   "@context": "https://schema.org",
   "@type": ["LocalBusiness", "TaxiService"],
   "@id": "https://ucuzataksi.net/#business",
-  "name": "UcuzaTaksi.net - İzmir Korsan Taksi",
-  "alternateName": ["İzmir Korsan Taksi", "Korsan Taksi İzmir", "Ucuza Taksi"],
-  "description": "İzmir korsan taksi ve ucuza taksi hizmeti. 7/24 güvenli korsan taksi İzmir'de en uygun fiyatlarla. Havaalanı transferi, şehir içi ulaşım.",
-  "slogan": "İzmir'de Ucuza Taksi Çözümünüz",
+  "name": "UcuzaTaksi.net - İzmir Transfer Hizmetleri",
+  "alternateName": ["İzmir Ekonomik Transfer", "Uygun Fiyatlı Transfer İzmir", "Ucuza Taksi"],
+  "description": "İzmir ekonomik transfer ve ucuza taksi hizmeti. 7/24 güvenli transfer hizmetleri İzmir'de en uygun fiyatlarla. Havaalanı transferi, şehir içi ulaşım.",
+  "slogan": "İzmir'de Ekonomik Transfer Çözümünüz",
   "url": "https://ucuzataksi.net",
   "telephone": "+90 534 088 14 10",
   "email": "info@ucuzataksi.net",
@@ -21,7 +21,7 @@ export const localBusinessSchema = {
       "url": "https://ucuzataksi.net/assets/logos/ucuzataksilogo.png",
       "width": 1200,
       "height": 630,
-      "name": "İzmir Korsan Taksi Logo"
+      "name": "İzmir Transfer Hizmetleri Logo"
     }
   ],
   "address": {
@@ -87,14 +87,14 @@ export const localBusinessSchema = {
   "paymentAccepted": ["Cash", "Credit Card", "Debit Card"],
   "hasOfferCatalog": {
     "@type": "OfferCatalog",
-    "name": "İzmir Korsan Taksi Hizmetleri",
+    "name": "İzmir Transfer Hizmetleri",
     "itemListElement": [
       {
         "@type": "Offer",
         "itemOffered": {
           "@type": "Service",
-          "name": "İzmir Şehir İçi Korsan Taksi",
-          "description": "İzmir şehir içi ucuza taksi ve korsan taksi hizmeti",
+          "name": "İzmir Şehir İçi Ekonomik Transfer",
+          "description": "İzmir şehir içi ucuza taksi ve ekonomik transfer hizmeti",
           "provider": {
             "@id": "https://ucuzataksi.net/#business"
           }
@@ -104,8 +104,8 @@ export const localBusinessSchema = {
         "@type": "Offer", 
         "itemOffered": {
           "@type": "Service",
-          "name": "İzmir Havaalanı Korsan Taksi",
-          "description": "İzmir Adnan Menderes Havaalanı korsan taksi ve ucuza transfer hizmeti",
+          "name": "İzmir Havaalanı Ekonomik Transfer",
+          "description": "İzmir Adnan Menderes Havaalanı ekonomik transfer ve ucuza transfer hizmeti",
           "provider": {
             "@id": "https://ucuzataksi.net/#business"
           }
@@ -115,8 +115,8 @@ export const localBusinessSchema = {
         "@type": "Offer",
         "itemOffered": {
           "@type": "Service", 
-          "name": "7/24 Korsan Taksi İzmir",
-          "description": "Gece gündüz kesintisiz İzmir korsan taksi ve ucuza taksi hizmeti",
+          "name": "7/24 Ekonomik Transfer İzmir",
+          "description": "Gece gündüz kesintisiz İzmir ekonomik transfer ve ucuza taksi hizmeti",
           "provider": {
             "@id": "https://ucuzataksi.net/#business"
           }
@@ -143,7 +143,7 @@ export const localBusinessSchema = {
         "@type": "Person",
         "name": "Ahmet K."
       },
-      "reviewBody": "İzmir'de en güvenilir korsan taksi hizmeti. Ucuza taksi arıyorsanız doğru adres.",
+      "reviewBody": "İzmir'de en güvenilir ekonomik transfer hizmeti. Ucuza taksi arıyorsanız doğru adres.",
       "datePublished": "2024-01-15"
     },
     {
@@ -157,7 +157,7 @@ export const localBusinessSchema = {
         "@type": "Person",
         "name": "Ayşe Y."
       },
-      "reviewBody": "Korsan taksi İzmir'de çok memnun kaldığım bir hizmet. Fiyatlar gerçekten ucuz.",
+      "reviewBody": "Ekonomik transfer İzmir'de çok memnun kaldığım bir hizmet. Fiyatlar gerçekten uygun.",
       "datePublished": "2024-01-20"
     }
   ],
@@ -165,8 +165,8 @@ export const localBusinessSchema = {
     "https://www.instagram.com/ucuzataksi",
     "https://wa.me/905340881410"
   ],
-  "knowsAbout": ["İzmir korsan taksi", "korsan taksi izmir", "ucuza taksi", "izmir taksi", "havaalanı transfer"],
-  "keywords": "izmir korsan taksi, korsan taksi izmir, ucuza taksi, izmir taksi, korsan taksi fiyatları"
+  "knowsAbout": ["İzmir ekonomik transfer", "uygun fiyatlı transfer izmir", "ucuza taksi", "izmir taksi", "havaalanı transfer"],
+  "keywords": "izmir ekonomik transfer, uygun fiyatlı transfer izmir, ucuza taksi, izmir taksi, ekonomik transfer fiyatları"
 }
 
 export const websiteSchema = {
@@ -174,11 +174,11 @@ export const websiteSchema = {
   "@type": "WebSite",
   "@id": "https://ucuzataksi.net/#website",
   "url": "https://ucuzataksi.net",
-  "name": "İzmir Korsan Taksi - UcuzaTaksi.net",
-  "alternateName": ["Korsan Taksi İzmir", "Ucuza Taksi"],
-  "description": "İzmir korsan taksi ve ucuza taksi hizmeti. Korsan taksi İzmir'de 7/24 en uygun fiyatlarla hizmetinizdeyiz.",
-  "headline": "İzmir Korsan Taksi - 7/24 Ucuza Taksi Hizmeti",
-  "keywords": "izmir korsan taksi, korsan taksi izmir, ucuza taksi, izmir ucuz taksi, korsan taksi fiyatları",
+  "name": "İzmir Transfer Hizmetleri - UcuzaTaksi.net",
+  "alternateName": ["Ekonomik Transfer İzmir", "Ucuza Taksi"],
+  "description": "İzmir ekonomik transfer ve ucuza taksi hizmeti. Transfer hizmetleri İzmir'de 7/24 en uygun fiyatlarla hizmetinizdeyiz.",
+  "headline": "İzmir Ekonomik Transfer - 7/24 Ucuza Taksi Hizmeti",
+  "keywords": "izmir ekonomik transfer, uygun fiyatlı transfer izmir, ucuza taksi, izmir ucuz taksi, transfer fiyatları",
   "publisher": {
     "@id": "https://ucuzataksi.net/#business"
   },
@@ -195,7 +195,7 @@ export const websiteSchema = {
   "inLanguage": "tr-TR",
   "about": {
     "@type": "Thing",
-    "name": "İzmir Korsan Taksi Hizmetleri"
+    "name": "İzmir Transfer Hizmetleri"
   }
 }
 
@@ -203,8 +203,8 @@ export const organizationSchema = {
   "@context": "https://schema.org",
   "@type": "Organization",
   "@id": "https://ucuzataksi.net/#organization",
-  "name": "UcuzaTaksi.net - İzmir Korsan Taksi",
-  "alternateName": ["İzmir Korsan Taksi", "Korsan Taksi İzmir", "Ucuza Taksi", "Ucuz Taksi İzmir"],
+  "name": "UcuzaTaksi.net - İzmir Transfer Hizmetleri",
+  "alternateName": ["İzmir Ekonomik Transfer", "Uygun Fiyatlı Transfer İzmir", "Ucuza Taksi", "Ucuz Taksi İzmir"],
   "url": "https://ucuzataksi.net",
   "logo": {
     "@type": "ImageObject",
@@ -212,7 +212,7 @@ export const organizationSchema = {
     "width": 512,
     "height": 512
   },
-  "description": "İzmir korsan taksi hizmeti veren güvenilir firma. Korsan taksi İzmir'de 7/24 ucuza taksi hizmeti sunuyoruz.",
+  "description": "İzmir ekonomik transfer hizmeti veren güvenilir firma. Transfer hizmetleri İzmir'de 7/24 ucuza taksi hizmeti sunuyoruz.",
   "slogan": "İzmir'de Ucuza Taksi Çözümünüz",
   "contactPoint": [
     {
@@ -250,16 +250,16 @@ export const organizationSchema = {
     "https://www.instagram.com/ucuzataksi",
     "https://wa.me/905340881410"
   ],
-  "knowsAbout": ["İzmir korsan taksi", "korsan taksi izmir", "ucuza taksi", "izmir taksi hizmetleri"]
+  "knowsAbout": ["İzmir ekonomik transfer", "uygun fiyatlı transfer izmir", "ucuza taksi", "izmir taksi hizmetleri"]
 }
 
 export const serviceSchema = {
   "@context": "https://schema.org",
   "@type": "Service",
   "@id": "https://ucuzataksi.net/#service",
-  "name": "İzmir Korsan Taksi - Ucuza Taksi Hizmeti",
-  "alternateName": ["İzmir Korsan Taksi", "Korsan Taksi İzmir", "Ucuza Taksi", "İzmir Ucuz Taksi"],
-  "description": "İzmir korsan taksi hizmeti ile ucuza taksi çözümü. Korsan taksi İzmir'de 7/24 havaalanı transferi, şehir içi ulaşım.",
+  "name": "İzmir Ekonomik Transfer - Ucuza Taksi Hizmeti",
+  "alternateName": ["İzmir Ekonomik Transfer", "Uygun Fiyatlı Transfer İzmir", "Ucuza Taksi", "İzmir Ucuz Taksi"],
+  "description": "İzmir ekonomik transfer hizmeti ile ucuza taksi çözümü. Transfer hizmetleri İzmir'de 7/24 havaalanı transferi, şehir içi ulaşım.",
   "provider": {
     "@id": "https://ucuzataksi.net/#business"
   },
@@ -276,12 +276,12 @@ export const serviceSchema = {
   ],
   "hasOfferCatalog": {
     "@type": "OfferCatalog",
-    "name": "İzmir Korsan Taksi Hizmet Paketleri",
+    "name": "İzmir Transfer Hizmet Paketleri",
     "itemListElement": [
       {
         "@type": "Offer",
-        "name": "İzmir Havaalanı Korsan Taksi Transfer",
-        "description": "İzmir Adnan Menderes Havaalanı korsan taksi ile ucuza transfer hizmeti",
+        "name": "İzmir Havaalanı Ekonomik Transfer",
+        "description": "İzmir Adnan Menderes Havaalanı ekonomik transfer ile ucuza transfer hizmeti",
         "priceSpecification": {
           "@type": "PriceSpecification",
           "priceCurrency": "TRY",
@@ -293,8 +293,8 @@ export const serviceSchema = {
       },
       {
         "@type": "Offer", 
-        "name": "İzmir Şehir İçi Korsan Taksi",
-        "description": "İzmir şehir merkezi ve ilçeler arası ucuza taksi ve korsan taksi hizmeti",
+        "name": "İzmir Şehir İçi Ekonomik Transfer",
+        "description": "İzmir şehir merkezi ve ilçeler arası ucuza taksi ve ekonomik transfer hizmeti",
         "priceSpecification": {
           "@type": "PriceSpecification",
           "priceCurrency": "TRY",
@@ -306,15 +306,15 @@ export const serviceSchema = {
       },
       {
         "@type": "Offer",
-        "name": "7/24 Korsan Taksi İzmir Gece Hizmeti",
-        "description": "24 saat kesintisiz İzmir korsan taksi ve ucuza taksi hizmeti",
+        "name": "7/24 Ekonomik Transfer İzmir Gece Hizmeti",
+        "description": "24 saat kesintisiz İzmir ekonomik transfer ve ucuza taksi hizmeti",
         "availability": "https://schema.org/InStock",
         "availableDeliveryMethod": "https://schema.org/OnSiteService"
       }
     ]
   },
   "serviceType": ["Taxi Service", "Transportation Service", "Transfer Service"],
-  "category": "Korsan Taksi",
+  "category": "Transfer Hizmeti",
   "offers": {
     "@type": "AggregateOffer",
     "priceCurrency": "TRY",
@@ -342,13 +342,13 @@ export const breadcrumbSchema = {
     {
       "@type": "ListItem",
       "position": 1,
-      "name": "Ana Sayfa - İzmir Korsan Taksi",
+      "name": "Ana Sayfa - İzmir Transfer Hizmetleri",
       "item": "https://ucuzataksi.net"
     },
     {
       "@type": "ListItem", 
       "position": 2,
-      "name": "Korsan Taksi İzmir Hizmetleri",
+      "name": "Transfer Hizmetleri İzmir",
       "item": "https://ucuzataksi.net/#services"
     },
     {
@@ -370,9 +370,9 @@ export const taxiServiceSchema = {
   "@context": "https://schema.org",
   "@type": "TaxiService",
   "@id": "https://ucuzataksi.net/#taxiservice",
-  "name": "İzmir Korsan Taksi - Ucuza Taksi",
-  "alternateName": ["Korsan Taksi İzmir", "İzmir Ucuz Taksi", "Ucuza Taksi İzmir"],
-  "description": "İzmir korsan taksi profesyonel hizmeti. Korsan taksi İzmir'de 7/24 ucuza taksi çözümünüz.",
+  "name": "İzmir Ekonomik Transfer - Ucuza Taksi",
+  "alternateName": ["Ekonomik Transfer İzmir", "İzmir Ucuz Taksi", "Ucuza Taksi İzmir"],
+  "description": "İzmir ekonomik transfer profesyonel hizmeti. Transfer hizmetleri İzmir'de 7/24 ucuza taksi çözümünüz.",
   "url": "https://ucuzataksi.net",
   "telephone": "+90 534 088 14 10",
   "email": "info@ucuzataksi.net",
@@ -402,26 +402,26 @@ export const taxiServiceSchema = {
     "name": "Turkish",
     "alternateName": "tr"
   },
-  "knowsAbout": ["İzmir korsan taksi", "korsan taksi izmir", "ucuza taksi", "havaalanı transfer", "şehir içi ulaşım"],
+  "knowsAbout": ["İzmir ekonomik transfer", "uygun fiyatlı transfer izmir", "ucuza taksi", "havaalanı transfer", "şehir içi ulaşım"],
   "hasOfferCatalog": {
     "@type": "OfferCatalog",
-    "name": "İzmir Korsan Taksi Ucuza Taksi Hizmetleri",
+    "name": "İzmir Ekonomik Transfer Ucuza Taksi Hizmetleri",
     "itemListElement": [
       {
         "@type": "Offer",
-        "name": "İzmir Korsan Taksi Kısa Mesafe",
+        "name": "İzmir Ekonomik Transfer Kısa Mesafe",
         "description": "5-10 km arası ucuza taksi hizmeti",
         "price": "35-70 TRY"
       },
       {
         "@type": "Offer",
-        "name": "İzmir Korsan Taksi Orta Mesafe",
-        "description": "10-25 km arası korsan taksi İzmir hizmeti",
+        "name": "İzmir Ekonomik Transfer Orta Mesafe",
+        "description": "10-25 km arası ekonomik transfer İzmir hizmeti",
         "price": "70-120 TRY"
       },
       {
         "@type": "Offer",
-        "name": "İzmir Korsan Taksi Uzun Mesafe",
+        "name": "İzmir Ekonomik Transfer Uzun Mesafe",
         "description": "25+ km ucuza taksi ve havaalanı transferi",
         "price": "120-200 TRY"
       }
@@ -435,18 +435,18 @@ export const faqSchema = {
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "İzmir korsan taksi fiyatları ne kadar?",
+      "name": "İzmir ekonomik transfer fiyatları ne kadar?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "İzmir korsan taksi fiyatları 35₺'den başlayarak güzergaha göre değişmektedir. Korsan taksi İzmir'de havaalanı transferi 120-200₺, şehir içi ucuza taksi hizmeti 35-150₺ arasındadır. Kesin fiyat için WhatsApp'tan iletişime geçebilirsiniz."
+        "text": "İzmir ekonomik transfer fiyatları 35₺'den başlayarak güzergaha göre değişmektedir. Uygun fiyatlı transfer İzmir'de havaalanı transferi 120-200₺, şehir içi ucuza taksi hizmeti 35-150₺ arasındadır. Kesin fiyat için WhatsApp'tan iletişime geçebilirsiniz."
       }
     },
     {
       "@type": "Question",
-      "name": "Korsan taksi İzmir'de güvenli mi?",
+      "name": "Ekonomik transfer İzmir'de güvenli mi?",
       "acceptedAnswer": {
         "@type": "Answer", 
-        "text": "Evet, korsan taksi İzmir'de tamamen güvenli hizmet veriyoruz. İzmir korsan taksi hizmetimizde deneyimli şoförler, temiz araçlar ve 7/24 ucuza taksi anlayışıyla güvenli ulaşım sağlıyoruz."
+        "text": "Evet, ekonomik transfer İzmir'de tamamen güvenli hizmet veriyoruz. İzmir transfer hizmetlerimizde deneyimli şoförler, temiz araçlar ve 7/24 ucuza taksi anlayışıyla güvenli ulaşım sağlıyoruz."
       }
     },
     {
@@ -454,39 +454,39 @@ export const faqSchema = {
       "name": "Ucuza taksi nasıl çağırırım?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Ucuza taksi çağırmak için WhatsApp hattımız +90 534 088 14 10 numarasından 7/24 iletişime geçebilirsiniz. İzmir korsan taksi hizmetimiz için web sitemizdeki fiyat hesaplama aracını da kullanabilirsiniz."
+        "text": "Ucuza taksi çağırmak için WhatsApp hattımız +90 534 088 14 10 numarasından 7/24 iletişime geçebilirsiniz. İzmir ekonomik transfer hizmetimiz için web sitemizdeki fiyat hesaplama aracını da kullanabilirsiniz."
       }
     },
     {
       "@type": "Question",
-      "name": "İzmir havaalanına korsan taksi var mı?",
+      "name": "İzmir havaalanına ekonomik transfer var mı?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Evet, İzmir Adnan Menderes Havaalanı'na korsan taksi İzmir hizmetimiz bulunmaktadır. Ucuza taksi ile havaalanı transferi için 24 saat önceden rezervasyon yapabilirsiniz."
+        "text": "Evet, İzmir Adnan Menderes Havaalanı'na ekonomik transfer hizmetimiz bulunmaktadır. Ucuza taksi ile havaalanı transferi için 24 saat önceden rezervasyon yapabilirsiniz."
       }
     },
     {
       "@type": "Question",
-      "name": "İzmir'de hangi bölgelere korsan taksi hizmeti veriyorsunuz?",
+      "name": "İzmir'de hangi bölgelere ekonomik transfer hizmeti veriyorsunuz?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "İzmir korsan taksi hizmetimiz Konak, Bornova, Karşıyaka, Buca, Alsancak, Bayraklı, Çiğli, Gaziemir ve tüm İzmir ilçelerinde mevcuttur. Korsan taksi İzmir genelinde ucuza taksi hizmeti sunuyoruz."
+        "text": "İzmir ekonomik transfer hizmetimiz Konak, Bornova, Karşıyaka, Buca, Alsancak, Bayraklı, Çiğli, Gaziemir ve tüm İzmir ilçelerinde mevcuttur. Transfer hizmetleri İzmir genelinde ucuza taksi hizmeti sunuyoruz."
       }
     },
     {
       "@type": "Question",
-      "name": "Korsan taksi rezervasyonu nasıl yapılır?",
+      "name": "Ekonomik transfer rezervasyonu nasıl yapılır?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Korsan taksi İzmir rezervasyonu için WhatsApp üzerinden 7/24 ulaşabilirsiniz. Ucuza taksi rezervasyonunuz için gidiş-dönüş saatinizi, kişi sayısını ve güzergahı belirtmeniz yeterlidir."
+        "text": "Ekonomik transfer İzmir rezervasyonu için WhatsApp üzerinden 7/24 ulaşabilirsiniz. Ucuza taksi rezervasyonunuz için gidiş-dönüş saatinizi, kişi sayısını ve güzergahı belirtmeniz yeterlidir."
       }
     },
     {
       "@type": "Question",
-      "name": "İzmir korsan taksi ile normal taksi arasındaki fark nedir?",
+      "name": "İzmir ekonomik transfer ile normal taksi arasındaki fark nedir?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "İzmir korsan taksi hizmeti, normal taksiye göre daha uygun fiyatlı ulaşım sağlar. Ucuza taksi olarak bilinen korsan taksi İzmir'de sabit fiyat garantisi ve 7/24 hizmet avantajı sunar."
+        "text": "İzmir ekonomik transfer hizmeti, normal taksiye göre daha uygun fiyatlı ulaşım sağlar. Ucuza taksi olarak bilinen ekonomik transfer İzmir'de sabit fiyat garantisi ve 7/24 hizmet avantajı sunar."
       }
     }
   ]

@@ -25,18 +25,18 @@ export default function Hero() {
             
             {/* Service Badge */}
             <Badge variant="outline" className="text-base md:text-lg mb-6">
-              🚖 İzmir Korsan Taksi - 7/24 Ucuza Taksi
+              🚖 İzmir Ekonomik Transfer - 7/24 Ucuza Taksi
               <ArrowUpRight className="ml-2 size-4" />
             </Badge>
 
             {/* Main Heading */}
             <h1 className="text-4xl lg:text-6xl xl:text-7xl font-black text-pretty mb-6">
-              İzmir Korsan Taksi <span className="text-primary">Ucuza Taksi</span> Hizmeti!
+              İzmir Ekonomik Transfer <span className="text-primary">Ucuza Taksi</span> Hizmeti!
             </h1>
 
             {/* Description */}
             <p className="text-muted-foreground lg:text-xl max-w-xl mb-8">
-              Korsan taksi İzmir&apos;de 7/24 ucuza taksi hizmeti. İzmir korsan taksi ile uygun fiyatlı, güvenli ulaşım. Havaalanı transferi ve şehir içi korsan taksi İzmir&apos;de hizmetinizde.
+              Ekonomik transfer İzmir&apos;de 7/24 ucuza taksi hizmeti. İzmir transfer hizmetleri ile uygun fiyatlı, güvenli ulaşım. Havaalanı transferi ve şehir içi ekonomik transfer İzmir&apos;de hizmetinizde.
             </p>
 
             {/* CTA Buttons - Desktop Only */}
@@ -66,7 +66,7 @@ export default function Hero() {
             <div className="absolute inset-0 rounded-md overflow-hidden shadow-2xl border border-border/20">
               <Image
                 src="/assets/hero-section-final.jpg"
-                alt="İzmir Korsan Taksi - Korsan Taksi İzmir - Ucuza Taksi Hizmeti"
+                alt="İzmir Ekonomik Transfer - Uygun Fiyatlı Transfer İzmir - Ucuza Taksi Hizmeti"
                 fill
                 className="object-cover scale-110"
                 priority

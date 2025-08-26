@@ -32,12 +32,12 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "İzmir Korsan Taksi | Korsan Taksi İzmir | Ucuza Taksi - 7/24 Hizmet",
-  description: "İzmir korsan taksi hizmeti ile ucuza taksi çözümü! Korsan taksi İzmir'de 7/24 güvenli ulaşım, havaalanı transferi, şehir içi taksi. ☎️ 0534 088 14 10",
-  keywords: "izmir korsan taksi, korsan taksi izmir, ucuza taksi, izmir ucuz taksi, korsan taksi fiyatları, izmir havaalanı korsan taksi, ucuz taksi izmir, korsan taksi numarası, izmir taksi, gece taksi izmir",
-  authors: [{ name: "UcuzaTaksi.net - İzmir Korsan Taksi" }],
+  title: "İzmir Ekonomik Transfer | Uygun Fiyatlı Transfer İzmir | Ucuza Taksi - 7/24 Hizmet",
+  description: "İzmir ekonomik transfer hizmeti ile ucuza taksi çözümü! Uygun fiyatlı transfer İzmir'de 7/24 güvenli ulaşım, havaalanı transferi, şehir içi taksi. ☎️ 0534 088 14 10",
+  keywords: "izmir ekonomik transfer, uygun fiyatlı transfer izmir, ucuza taksi, izmir ucuz taksi, ekonomik transfer fiyatları, izmir havaalanı ekonomik transfer, ucuz taksi izmir, transfer hizmeti numarası, izmir taksi, gece taksi izmir",
+  authors: [{ name: "UcuzaTaksi.net - İzmir Transfer Hizmetleri" }],
   creator: "UcuzaTaksi.net",
-  publisher: "UcuzaTaksi.net - İzmir Korsan Taksi",
+  publisher: "UcuzaTaksi.net - İzmir Transfer Hizmetleri",
   robots: "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
   metadataBase: new URL('https://ucuzataksi.net'),
   alternates: {
@@ -50,22 +50,22 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'tr_TR',
     url: 'https://ucuzataksi.net',
-    siteName: 'UcuzaTaksi.net - İzmir Korsan Taksi',
-    title: 'İzmir Korsan Taksi | Korsan Taksi İzmir | Ucuza Taksi Hizmeti',
-    description: "İzmir korsan taksi ve ucuza taksi hizmeti! Korsan taksi İzmir'de 7/24 güvenli ulaşım, havaalanı transferi, şehir içi taksi. WhatsApp: 0534 088 14 10",
+    siteName: 'UcuzaTaksi.net - İzmir Transfer Hizmetleri',
+    title: 'İzmir Ekonomik Transfer | Uygun Fiyatlı Transfer İzmir | Ucuza Taksi Hizmeti',
+    description: "İzmir ekonomik transfer ve ucuza taksi hizmeti! Uygun fiyatlı transfer İzmir'de 7/24 güvenli ulaşım, havaalanı transferi, şehir içi taksi. WhatsApp: 0534 088 14 10",
     images: [
       {
         url: 'https://ucuzataksi.net/assets/logos/ucuzataksilogo.png',
         width: 1200,
         height: 630,
-        alt: 'İzmir Korsan Taksi - Korsan Taksi İzmir - Ucuza Taksi',
+        alt: 'İzmir Ekonomik Transfer - Uygun Fiyatlı Transfer İzmir - Ucuza Taksi',
         type: 'image/png',
       },
       {
         url: 'https://ucuzataksi.net/assets/logos/ucuzataksilogo.png',
         width: 800,
         height: 600,
-        alt: 'Korsan Taksi İzmir - 7/24 Ucuza Taksi Hizmeti',
+        alt: 'Ekonomik Transfer İzmir - 7/24 Ucuza Taksi Hizmeti',
       },
     ],
     determiner: 'auto',
@@ -74,8 +74,8 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     site: '@ucuzataksi',
     creator: '@ucuzataksi',
-    title: 'İzmir Korsan Taksi | Korsan Taksi İzmir | Ucuza Taksi',
-    description: "İzmir korsan taksi hizmeti! Korsan taksi İzmir'de ucuza taksi çözümünüz. 7/24 güvenli ulaşım, havaalanı transferi. WhatsApp: 0534 088 14 10",
+    title: 'İzmir Ekonomik Transfer | Uygun Fiyatlı Transfer İzmir | Ucuza Taksi',
+    description: "İzmir ekonomik transfer hizmeti! Uygun fiyatlı transfer İzmir'de ucuza taksi çözümünüz. 7/24 güvenli ulaşım, havaalanı transferi. WhatsApp: 0534 088 14 10",
     images: ['https://ucuzataksi.net/assets/logos/ucuzataksilogo.png'],
   },
   verification: {
@@ -124,7 +124,7 @@ export const metadata: Metadata = {
     'theme-color': '#000000',
     'apple-mobile-web-app-capable': 'yes',
     'apple-mobile-web-app-status-bar-style': 'black-translucent',
-    'apple-mobile-web-app-title': 'İzmir Korsan Taksi',
+    'apple-mobile-web-app-title': 'İzmir Ekonomik Transfer',
     'application-name': 'UcuzaTaksi.net',
     'msapplication-TileColor': '#000000',
     'msapplication-config': '/browserconfig.xml',
@@ -145,8 +145,8 @@ export default function RootLayout({
         <link rel="preconnect" href="https://www.instagram.com" />
         
         {/* Additional SEO Meta Tags */}
-        <meta name="keywords" content="izmir korsan taksi, korsan taksi izmir, ucuza taksi, izmir ucuz taksi, korsan taksi fiyatları, izmir havaalanı korsan taksi" />
-        <meta name="author" content="UcuzaTaksi.net - İzmir Korsan Taksi" />
+        <meta name="keywords" content="izmir ekonomik transfer, uygun fiyatlı transfer izmir, ucuza taksi, izmir ucuz taksi, ekonomik transfer fiyatları, izmir havaalanı ekonomik transfer" />
+        <meta name="author" content="UcuzaTaksi.net - İzmir Transfer Hizmetleri" />
         <meta name="copyright" content="UcuzaTaksi.net" />
         <meta name="robots" content="index, follow, max-image-preview:large" />
         <meta name="googlebot" content="index, follow" />
@@ -164,7 +164,7 @@ export default function RootLayout({
         {/* Mobile Meta Tags */}
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-        <meta name="apple-mobile-web-app-title" content="İzmir Korsan Taksi" />
+        <meta name="apple-mobile-web-app-title" content="İzmir Ekonomik Transfer" />
         
         {/* Theme Colors */}
         <meta name="theme-color" content="#000000" />

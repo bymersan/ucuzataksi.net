@@ -40,8 +40,8 @@ export default function About() {
                   </div>
                 </div>
                 <div className="absolute bottom-6 left-6 text-white z-30">
-                  <h3 className="text-2xl font-bold mb-2">UcuzaTaksi - İzmir Korsan Taksi</h3>
-                  <p className="text-sm opacity-90">Korsan Taksi İzmir&apos;de Ucuza Taksi Çözümünüz</p>
+                  <h3 className="text-2xl font-bold mb-2">UcuzaTaksi - İzmir Transfer Hizmetleri</h3>
+                  <p className="text-sm opacity-90">Transfer Hizmetleri İzmir&apos;de Ucuza Taksi Çözümünüz</p>
                 </div>
               </Card>
               
@@ -60,11 +60,11 @@ export default function About() {
           <div className="space-y-6">
             <div>
               <h2 className="text-3xl font-black lg:text-5xl mb-4">
-                İzmir Korsan Taksi ile <span className="text-primary">Ucuza Taksi</span> Hizmeti
+                İzmir Ekonomik Transfer ile <span className="text-primary">Ucuza Taksi</span> Hizmeti
               </h2>
               <p className="text-muted-foreground text-lg">
-                İzmir korsan taksi olarak yılların tecrübesiyle korsan taksi İzmir ve çevresinde 7/24 ucuza taksi hizmeti sunuyoruz. 
-                Korsan taksi İzmir&apos;de müşteri memnuniyeti odaklı yaklaşımımızla, güvenli ve ekonomik ulaşım sağlıyoruz.
+                İzmir ekonomik transfer şirketi olarak yılların tecrübesiyle transfer hizmetleri İzmir ve çevresinde 7/24 ucuza taksi hizmeti sunuyoruz. 
+                Transfer hizmetleri İzmir&apos;de müşteri memnuniyeti odaklı yaklaşımımızla, güvenli ve ekonomik ulaşım sağlıyoruz.
               </p>
             </div>
 
@@ -111,15 +111,15 @@ export default function About() {
             </div>
 
             <div className="pt-4">
-              <h3 className="font-bold text-xl mb-3">Neden İzmir Korsan Taksi Tercih Edilmeli?</h3>
+              <h3 className="font-bold text-xl mb-3">Neden İzmir Ekonomik Transfer Tercih Edilmeli?</h3>
               <ul className="space-y-2 text-muted-foreground">
                 <li className="flex items-start">
                   <span className="text-primary mr-2">✓</span>
-                  İzmir korsan taksi ile ucuza taksi garantisi
+                  İzmir ekonomik transfer ile ucuza taksi garantisi
                 </li>
                 <li className="flex items-start">
                   <span className="text-primary mr-2">✓</span>
-                  Korsan taksi İzmir&apos;de 7/24 kesintisiz hizmet
+                  Transfer hizmetleri İzmir&apos;de 7/24 kesintisiz hizmet
                 </li>
                 <li className="flex items-start">
                   <span className="text-primary mr-2">✓</span>
@@ -127,11 +127,11 @@ export default function About() {
                 </li>
                 <li className="flex items-start">
                   <span className="text-primary mr-2">✓</span>
-                  Korsan taksi İzmir deneyimli sürücü kadrosu
+                  Transfer hizmetleri İzmir deneyimli sürücü kadrosu
                 </li>
                 <li className="flex items-start">
                   <span className="text-primary mr-2">✓</span>
-                  İzmir korsan taksi temiz araç filosu ve özel hizmetler
+                  İzmir ekonomik transfer temiz araç filosu ve özel hizmetler
                 </li>
               </ul>
             </div>

@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-A Turkish taxi service marketing website (UcuzaTaksi.net) built with Next.js 15.5.0, featuring SEO optimization, GTM tracking, contact forms, and WhatsApp integration. The site is focused on İzmir "korsan taksi" (unofficial taxi) services.
+A Turkish transfer service company website (UcuzaTaksi.net) built with Next.js 15.5.0, featuring SEO optimization, GTM tracking, contact forms, and WhatsApp integration. The site is focused on İzmir ekonomik transfer (economical transfer) and affordable transportation services.
 
 ## Development Commands
 

@@ -16,28 +16,28 @@ export default function FAQ() {
   const { trackWhatsAppClick, contactInfo } = useWhatsApp()
   const faqs = [
     {
-      question: "İzmir korsan taksi hizmet alanları nerelerdir?",
-      answer: "İzmir korsan taksi olarak İzmir merkez ve tüm ilçelerde hizmet veriyoruz. Korsan taksi İzmir'de havaalanı transferi, şehir içi ucuza taksi ve çevre illere özel transfer sağlıyoruz. 7/24 korsan taksi İzmir hizmeti."
+      question: "İzmir ekonomik transfer hizmet alanları nerelerdir?",
+      answer: "İzmir ekonomik transfer olarak İzmir merkez ve tüm ilçelerde hizmet veriyoruz. Transfer hizmetleri İzmir'de havaalanı transferi, şehir içi ucuza taksi ve çevre illere özel transfer sağlıyoruz. 7/24 ekonomik transfer İzmir hizmeti."
     },
     {
-      question: "Korsan taksi İzmir rezervasyon nasıl yapılır?",
-      answer: `İzmir korsan taksi rezervasyonu için WhatsApp üzerinden ${contactInfo.phone.display} numarasından ulaşabilirsiniz. Korsan taksi İzmir'de ucuza taksi talepleriniz için 7/24 hizmetinizdeyiz.`
+      question: "Ekonomik transfer İzmir rezervasyon nasıl yapılır?",
+      answer: `İzmir ekonomik transfer rezervasyonu için WhatsApp üzerinden ${contactInfo.phone.display} numarasından ulaşabilirsiniz. Transfer hizmetleri İzmir'de ucuza taksi talepleriniz için 7/24 hizmetinizdeyiz.`
     },
     {
-      question: "İzmir korsan taksi fiyatları nasıl belirleniyor?",
-      answer: "İzmir korsan taksi fiyatlarımız mesafeye göre belirlenir. Korsan taksi İzmir'de ucuza taksi garantisi sunuyoruz. Havaalanı korsan taksi ve şehir içi ucuza taksi için sabit tarifelerimiz mevcuttur."
+      question: "İzmir ekonomik transfer fiyatları nasıl belirleniyor?",
+      answer: "İzmir ekonomik transfer fiyatlarımız mesafeye göre belirlenir. Transfer hizmetleri İzmir'de ucuza taksi garantisi sunuyoruz. Havaalanı ekonomik transfer ve şehir içi ucuza taksi için sabit tarifelerimiz mevcuttur."
     },
     {
       question: "Hangi ödeme yöntemlerini kabul ediyorsunuz?",
       answer: "Nakit, kredi kartı ve dijital ödeme yöntemlerini kabul ediyoruz. Kurumsal müşterilerimiz için fatura ve havale seçenekleri de bulunmaktadır."
     },
     {
-      question: "Korsan taksi İzmir güvenli mi?",
-      answer: "İzmir korsan taksi hizmetimiz tamamen güvenlidir. Korsan taksi İzmir'de deneyimli sürücüler, bakımlı araçlar ve sigortalı ucuza taksi hizmeti sunuyoruz. %100 yasal korsan taksi hizmeti."
+      question: "Ekonomik transfer İzmir güvenli mi?",
+      answer: "İzmir ekonomik transfer hizmetimiz tamamen güvenlidir. Transfer hizmetleri İzmir'de deneyimli sürücüler, bakımlı araçlar ve sigortalı ucuza taksi hizmeti sunuyoruz. %100 yasal transfer hizmeti."
     },
     {
-      question: "İzmir havaalanı korsan taksi hizmeti var mı?",
-      answer: "Evet, İzmir Adnan Menderes Havaalanı'na korsan taksi İzmir hizmetimiz vardır. İzmir korsan taksi ile havaalanına ucuza taksi transferi sağlıyoruz. 7/24 havaalanı korsan taksi hizmeti."
+      question: "İzmir havaalanı ekonomik transfer hizmeti var mı?",
+      answer: "Evet, İzmir Adnan Menderes Havaalanı'na ekonomik transfer hizmetimiz vardır. İzmir transfer hizmetleri ile havaalanına ucuza taksi transferi sağlıyoruz. 7/24 havaalanı ekonomik transfer hizmeti."
     },
     {
       question: "Evcil hayvan taşıyabiliyor musunuz?",

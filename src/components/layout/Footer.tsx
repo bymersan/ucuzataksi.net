@@ -49,10 +49,10 @@ export default function Footer() {
         {/* Bottom Footer */}
         <div className="flex flex-col items-center gap-2">
           <p className="text-sm text-muted-foreground">
-            © {currentYear} UcuzaTaksi - İzmir Korsan Taksi | Korsan Taksi İzmir | Ucuza Taksi
+            © {currentYear} UcuzaTaksi - İzmir Transfer Hizmetleri | Ekonomik Transfer İzmir | Ucuza Taksi
           </p>
           <p className="text-xs text-muted-foreground">
-            İzmir&apos;de 7/24 korsan taksi ve ucuza taksi hizmeti
+            İzmir&apos;de 7/24 ekonomik transfer ve ucuza taksi hizmeti
           </p>
         </div>
       </div>
