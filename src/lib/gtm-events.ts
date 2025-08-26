@@ -7,6 +7,8 @@ declare global {
   interface Window {
     dataLayer: Array<Record<string, unknown>>;
     gtag: (...args: unknown[]) => void;
+    gtag_report_call_conversion: (url?: string) => boolean;
+    gtag_report_whatsapp_conversion: (url?: string) => boolean;
   }
 }
 
@@ -114,6 +116,11 @@ export function trackWhatsAppClick(location: string, value?: number) {
     page_url: typeof window !== 'undefined' ? window.location.href : '',
     page_title: typeof document !== 'undefined' ? document.title : ''
   })
+  
+  // Also trigger Google Ads conversion
+  if (typeof window !== 'undefined' && window.gtag_report_whatsapp_conversion) {
+    window.gtag_report_whatsapp_conversion()
+  }
 }
 
 /**
@@ -134,6 +141,11 @@ export function trackPhoneClick(phoneNumber: string, location: string) {
     page_url: typeof window !== 'undefined' ? window.location.href : '',
     page_title: typeof document !== 'undefined' ? document.title : ''
   })
+  
+  // Also trigger Google Ads conversion
+  if (typeof window !== 'undefined' && window.gtag_report_call_conversion) {
+    window.gtag_report_call_conversion()
+  }
 }
 
 /**
@@ -154,6 +166,11 @@ export function trackPhoneCall(phoneNumber: string, location: string) {
     page_url: typeof window !== 'undefined' ? window.location.href : '',
     page_title: typeof document !== 'undefined' ? document.title : ''
   })
+  
+  // Also trigger Google Ads conversion
+  if (typeof window !== 'undefined' && window.gtag_report_call_conversion) {
+    window.gtag_report_call_conversion()
+  }
 }
 
 /**

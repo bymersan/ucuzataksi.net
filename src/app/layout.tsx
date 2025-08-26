@@ -214,6 +214,60 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 })(window,document,'script','dataLayer','GTM-PT5MRW88');`,
           }}
         />
+
+        {/* Google Ads Conversion Tracking */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=AW-17510553721"
+          strategy="afterInteractive"
+        />
+        <Script
+          id="google-ads-gtag"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'AW-17510553721');
+              
+              // Google Ads Conversion Function for Click Call
+              function gtag_report_call_conversion(url) {
+                var callback = function () {
+                  if (typeof(url) != 'undefined') {
+                    window.location = url;
+                  }
+                };
+                gtag('event', 'conversion', {
+                    'send_to': 'AW-17510553721/z9HdCPbTo44bEPmw151B',
+                    'value': 20.0,
+                    'currency': 'TRY',
+                    'event_callback': callback
+                });
+                return false;
+              }
+              
+              // Google Ads Conversion Function for Click WhatsApp
+              function gtag_report_whatsapp_conversion(url) {
+                var callback = function () {
+                  if (typeof(url) != 'undefined') {
+                    window.location = url;
+                  }
+                };
+                gtag('event', 'conversion', {
+                    'send_to': 'AW-17510553721/23JsCPnTo44bEPmw151B',
+                    'value': 20.0,
+                    'currency': 'TRY',
+                    'event_callback': callback
+                });
+                return false;
+              }
+              
+              // Make functions globally available
+              window.gtag_report_call_conversion = gtag_report_call_conversion;
+              window.gtag_report_whatsapp_conversion = gtag_report_whatsapp_conversion;
+            `,
+          }}
+        />
         
         {/* Instagram Embed Script */}
         <Script
