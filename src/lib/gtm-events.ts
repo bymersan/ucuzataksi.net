@@ -98,63 +98,62 @@ export function trackEnhancedConversion(
 }
 
 /**
- * WhatsApp Click Conversion
+ * WhatsApp Click Event
  */
 export function trackWhatsAppClick(location: string, value?: number) {
-  trackConversion({
-    event: 'conversion',
+  pushToDataLayer({
+    event: 'click_whatsapp',
     event_category: 'engagement',
     event_action: 'whatsapp_click',
     event_label: location,
     value: value || 1,
     currency: 'TRY',
-    custom_parameters: {
-      button_location: location,
-      contact_method: 'whatsapp'
-    }
+    button_location: location,
+    contact_method: 'whatsapp',
+    event_timestamp: new Date().toISOString(),
+    page_url: typeof window !== 'undefined' ? window.location.href : '',
+    page_title: typeof document !== 'undefined' ? document.title : ''
   })
 }
 
 /**
- * Phone Call Click Conversion  
+ * Phone Click Event  
  */
 export function trackPhoneClick(phoneNumber: string, location: string) {
-  trackConversion({
-    event: 'conversion',
+  pushToDataLayer({
+    event: 'click_call',
     event_category: 'engagement', 
     event_action: 'phone_click',
     event_label: location,
     value: 2, // Phone calls are more valuable than WhatsApp
     currency: 'TRY',
-    custom_parameters: {
-      phone_number: phoneNumber,
-      button_location: location,
-      contact_method: 'phone'
-    }
+    phone_number: phoneNumber,
+    button_location: location,
+    contact_method: 'phone',
+    event_timestamp: new Date().toISOString(),
+    page_url: typeof window !== 'undefined' ? window.location.href : '',
+    page_title: typeof document !== 'undefined' ? document.title : ''
   })
 }
 
 /**
- * Direct Phone Call Conversion (for floating button)
+ * Direct Phone Call Event (for floating button)
  */
 export function trackPhoneCall(phoneNumber: string, location: string) {
-  // Track both the legacy phone_click and new click_call events
-  trackConversion({
-    event: 'conversion',
+  pushToDataLayer({
+    event: 'click_call',
     event_category: 'engagement',
     event_action: 'click_call',
     event_label: location,
     value: 3, // Direct calls are highest value
     currency: 'TRY',
-    custom_parameters: {
-      phone_number: phoneNumber,
-      button_location: location,
-      contact_method: 'direct_call'
-    }
+    phone_number: phoneNumber,
+    button_location: location,
+    contact_method: 'direct_call',
+    event_timestamp: new Date().toISOString(),
+    page_url: typeof window !== 'undefined' ? window.location.href : '',
+    page_title: typeof document !== 'undefined' ? document.title : ''
   })
-
-  // Also send the legacy event for backward compatibility
-  trackPhoneClick(phoneNumber, location)
 }
 
 /**
