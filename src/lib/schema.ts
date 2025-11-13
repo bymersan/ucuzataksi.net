@@ -7,7 +7,7 @@ export const localBusinessSchema = {
   "description": "İzmir ekonomik transfer ve ucuza taksi hizmeti. 7/24 güvenli transfer hizmetleri İzmir'de en uygun fiyatlarla. Havaalanı transferi, şehir içi ulaşım.",
   "slogan": "İzmir'de Ekonomik Transfer Çözümünüz",
   "url": "https://ucuzataksi.net",
-  "telephone": "+90 534 088 14 10",
+  "telephone": "+90 532 519 75 35",
   "email": "info@ucuzataksi.net",
   "logo": {
     "@type": "ImageObject",
@@ -163,7 +163,7 @@ export const localBusinessSchema = {
   ],
   "sameAs": [
     "https://www.instagram.com/ucuzataksi",
-    "https://wa.me/905340881410"
+    "https://wa.me/905325197535"
   ],
   "knowsAbout": ["İzmir ekonomik transfer", "uygun fiyatlı transfer izmir", "ucuza taksi", "izmir taksi", "havaalanı transfer"],
   "keywords": "izmir ekonomik transfer, uygun fiyatlı transfer izmir, ucuza taksi, izmir taksi, ekonomik transfer fiyatları"
@@ -217,7 +217,7 @@ export const organizationSchema = {
   "contactPoint": [
     {
       "@type": "ContactPoint",
-      "telephone": "+90-534-088-14-10",
+      "telephone": "+90-532-519-75-35",
       "contactType": "customer service",
       "contactOption": ["TollFree", "HearingImpairedSupported"],
       "areaServed": {
@@ -248,7 +248,7 @@ export const organizationSchema = {
   },
   "sameAs": [
     "https://www.instagram.com/ucuzataksi",
-    "https://wa.me/905340881410"
+    "https://wa.me/905325197535"
   ],
   "knowsAbout": ["İzmir ekonomik transfer", "uygun fiyatlı transfer izmir", "ucuza taksi", "izmir taksi hizmetleri"]
 }
@@ -374,7 +374,7 @@ export const taxiServiceSchema = {
   "alternateName": ["Ekonomik Transfer İzmir", "İzmir Ucuz Taksi", "Ucuza Taksi İzmir"],
   "description": "İzmir ekonomik transfer profesyonel hizmeti. Transfer hizmetleri İzmir'de 7/24 ucuza taksi çözümünüz.",
   "url": "https://ucuzataksi.net",
-  "telephone": "+90 534 088 14 10",
+  "telephone": "+90 532 519 75 35",
   "email": "info@ucuzataksi.net",
   "priceRange": "₺₺",
   "paymentAccepted": ["Nakit", "Kredi Kartı", "Banka Kartı"],
@@ -454,7 +454,7 @@ export const faqSchema = {
       "name": "Ucuza taksi nasıl çağırırım?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Ucuza taksi çağırmak için WhatsApp hattımız +90 534 088 14 10 numarasından 7/24 iletişime geçebilirsiniz. İzmir ekonomik transfer hizmetimiz için web sitemizdeki fiyat hesaplama aracını da kullanabilirsiniz."
+        "text": "Ucuza taksi çağırmak için WhatsApp hattımız +90 532 519 75 35 numarasından 7/24 iletişime geçebilirsiniz. İzmir ekonomik transfer hizmetimiz için web sitemizdeki fiyat hesaplama aracını da kullanabilirsiniz."
       }
     },
     {

@@ -265,7 +265,7 @@ Additional Conditions: event_action equals form_submission
   value: 3, // Highest phone value
   currency: 'TRY',
   custom_parameters: {
-    phone_number: '+905340881410',
+    phone_number: '+905325197535',
     button_location: 'floating_button',
     contact_method: 'direct_call'
   }

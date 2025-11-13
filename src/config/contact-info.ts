@@ -1,9 +1,9 @@
 export const contactInfo = {
   // İletişim Bilgileri
   phone: {
-    display: "+90 534 088 1410",
-    whatsapp: "905340881410", // Ülke kodu ile, + işareti olmadan
-    call: "+905340881410"
+    display: "+90 532 519 75 35",
+    whatsapp: "905325197535", // Ülke kodu ile, + işareti olmadan
+    call: "+905325197535"
   },
   
   email: {

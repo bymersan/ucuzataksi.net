@@ -33,7 +33,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "İzmir Ekonomik Transfer | Uygun Fiyatlı Transfer İzmir | Ucuza Taksi - 7/24 Hizmet",
-  description: "İzmir ekonomik transfer hizmeti ile ucuza taksi çözümü! Uygun fiyatlı transfer İzmir'de 7/24 güvenli ulaşım, havaalanı transferi, şehir içi taksi. ☎️ 0534 088 14 10",
+  description: "İzmir ekonomik transfer hizmeti ile ucuza taksi çözümü! Uygun fiyatlı transfer İzmir'de 7/24 güvenli ulaşım, havaalanı transferi, şehir içi taksi. ☎️ 0532 519 75 35",
   keywords: "izmir ekonomik transfer, uygun fiyatlı transfer izmir, ucuza taksi, izmir ucuz taksi, ekonomik transfer fiyatları, izmir havaalanı ekonomik transfer, ucuz taksi izmir, transfer hizmeti numarası, izmir taksi, gece taksi izmir",
   authors: [{ name: "UcuzaTaksi.net - İzmir Transfer Hizmetleri" }],
   creator: "UcuzaTaksi.net",
@@ -52,7 +52,7 @@ export const metadata: Metadata = {
     url: 'https://ucuzataksi.net',
     siteName: 'UcuzaTaksi.net - İzmir Transfer Hizmetleri',
     title: 'İzmir Ekonomik Transfer | Uygun Fiyatlı Transfer İzmir | Ucuza Taksi Hizmeti',
-    description: "İzmir ekonomik transfer ve ucuza taksi hizmeti! Uygun fiyatlı transfer İzmir'de 7/24 güvenli ulaşım, havaalanı transferi, şehir içi taksi. WhatsApp: 0534 088 14 10",
+    description: "İzmir ekonomik transfer ve ucuza taksi hizmeti! Uygun fiyatlı transfer İzmir'de 7/24 güvenli ulaşım, havaalanı transferi, şehir içi taksi. WhatsApp: 0532 519 75 35",
     images: [
       {
         url: 'https://ucuzataksi.net/assets/logos/ucuzataksilogo.png',
@@ -75,7 +75,7 @@ export const metadata: Metadata = {
     site: '@ucuzataksi',
     creator: '@ucuzataksi',
     title: 'İzmir Ekonomik Transfer | Uygun Fiyatlı Transfer İzmir | Ucuza Taksi',
-    description: "İzmir ekonomik transfer hizmeti! Uygun fiyatlı transfer İzmir'de ucuza taksi çözümünüz. 7/24 güvenli ulaşım, havaalanı transferi. WhatsApp: 0534 088 14 10",
+    description: "İzmir ekonomik transfer hizmeti! Uygun fiyatlı transfer İzmir'de ucuza taksi çözümünüz. 7/24 güvenli ulaşım, havaalanı transferi. WhatsApp: 0532 519 75 35",
     images: ['https://ucuzataksi.net/assets/logos/ucuzataksilogo.png'],
   },
   verification: {
@@ -172,7 +172,7 @@ export default function RootLayout({
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
         
         {/* Contact Information */}
-        <meta name="contact" content="phone=+905340881410" />
+        <meta name="contact" content="phone=+905325197535" />
         <meta name="contact" content="email=info@ucuzataksi.net" />
         
         {/* Alternative Language Tags */}

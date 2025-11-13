@@ -6,6 +6,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { Button } from "@/components/ui/button"
 import { Calculator, MapPin, MessageSquare } from "lucide-react"
 import { trackWhatsAppClick } from "@/lib/gtm-events"
+import { contactInfo } from "@/config/contact-info"
 
 const IZMIR_DISTRICTS = [
   { id: 'aliaga', name: 'Aliağa' },
@@ -72,7 +73,7 @@ Bu güzergah için taksi rezervasyonu yapmak istiyorum. En uygun fiyat teklifini
 🚖 7/24 hizmet - Güvenli yolculuk
 ⏱️ Hızlı rezervasyon`
 
-    const whatsappUrl = `https://wa.me/+905340881410?text=${encodeURIComponent(message)}`
+    const whatsappUrl = `https://wa.me/${contactInfo.phone.whatsapp}?text=${encodeURIComponent(message)}`
     
     // Small delay to ensure GTM events are sent
     setTimeout(() => {
