@@ -5,7 +5,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 import { Button } from "@/components/ui/button"
 import { Calculator, MapPin, MessageSquare } from "lucide-react"
-import { trackWhatsAppClick } from "@/lib/gtm-events"
+import { trackConversion } from "@/lib/gtm-events"
 import { contactInfo } from "@/config/contact-info"
 
 const IZMIR_DISTRICTS = [
@@ -59,8 +59,8 @@ export function PriceCalculator({ className = "", compact = false }: PriceCalcul
     const fromName = IZMIR_DISTRICTS.find(d => d.id === fromDistrict)?.name
     const toName = IZMIR_DISTRICTS.find(d => d.id === toDistrict)?.name
     
-    // Track WhatsApp click conversion (without showing price)
-    trackWhatsAppClick('price_calculator_hero')
+    // Track conversion
+    trackConversion()
     
     // Simple message without estimated price
     const message = `Merhaba! ucuzataksi.net fiyat hesaplama aracından geliyorum.

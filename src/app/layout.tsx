@@ -180,14 +180,6 @@ export default function RootLayout({
         <link rel="alternate" hrefLang="x-default" href="https://ucuzataksi.net" />
       </head>
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
-        <noscript>
-          <iframe 
-            src="https://www.googletagmanager.com/ns.html?id=GTM-PT5MRW88"
-            height="0" 
-            width="0" 
-            style={{display:"none",visibility:"hidden"}}
-          />
-        </noscript>
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
@@ -202,22 +194,9 @@ export default function RootLayout({
           </GTMProvider>
         </ThemeProvider>
 
-        {/* Google Tag Manager */}
-        <Script
-          id="google-tag-manager"
-          strategy="afterInteractive"
-          dangerouslySetInnerHTML={{
-            __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-PT5MRW88');`,
-          }}
-        />
-
         {/* Google Ads Conversion Tracking */}
         <Script
-          src="https://www.googletagmanager.com/gtag/js?id=AW-17510553721"
+          src="https://www.googletagmanager.com/gtag/js?id=AW-11468635348"
           strategy="afterInteractive"
         />
         <Script
@@ -228,43 +207,23 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
               window.dataLayer = window.dataLayer || [];
               function gtag(){dataLayer.push(arguments);}
               gtag('js', new Date());
-              gtag('config', 'AW-17510553721');
-              
-              // Google Ads Conversion Function for Click Call
-              function gtag_report_call_conversion(url) {
+              gtag('config', 'AW-11468635348');
+
+              function gtag_report_conversion(url) {
                 var callback = function () {
                   if (typeof(url) != 'undefined') {
                     window.location = url;
                   }
                 };
                 gtag('event', 'conversion', {
-                    'send_to': 'AW-17510553721/z9HdCPbTo44bEPmw151B',
-                    'value': 20.0,
+                    'send_to': 'AW-11468635348/BYbhCNuYgMobENT51dwq',
+                    'value': 1.0,
                     'currency': 'TRY',
                     'event_callback': callback
                 });
                 return false;
               }
-              
-              // Google Ads Conversion Function for Click WhatsApp
-              function gtag_report_whatsapp_conversion(url) {
-                var callback = function () {
-                  if (typeof(url) != 'undefined') {
-                    window.location = url;
-                  }
-                };
-                gtag('event', 'conversion', {
-                    'send_to': 'AW-17510553721/23JsCPnTo44bEPmw151B',
-                    'value': 20.0,
-                    'currency': 'TRY',
-                    'event_callback': callback
-                });
-                return false;
-              }
-              
-              // Make functions globally available
-              window.gtag_report_call_conversion = gtag_report_call_conversion;
-              window.gtag_report_whatsapp_conversion = gtag_report_whatsapp_conversion;
+              window.gtag_report_conversion = gtag_report_conversion;
             `,
           }}
         />

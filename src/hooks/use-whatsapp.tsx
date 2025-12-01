@@ -1,23 +1,13 @@
 "use client"
 
 import { contactInfo } from "@/config/contact-info"
-import { trackWhatsAppClick as trackWhatsAppGTM, trackPhoneClick } from "@/lib/gtm-events"
+import { trackConversion } from "@/lib/gtm-events"
 
 export function useWhatsApp() {
-  const trackWhatsAppClick = (location: string) => {
-    // Use the new GTM events system
-    trackWhatsAppGTM(location)
-  }
+  const openWhatsApp = (message?: string) => {
+    // Track conversion
+    trackConversion()
 
-  const trackPhoneClickEvent = (phoneNumber: string, location: string) => {
-    trackPhoneClick(phoneNumber, location)
-  }
-
-  const openWhatsApp = (message?: string, location?: string) => {
-    if (location) {
-      trackWhatsAppClick(location)
-    }
-    
     const whatsappMessage = message || contactInfo.whatsappMessages.default
     const url = `https://api.whatsapp.com/send/?phone=${contactInfo.phone.whatsapp}&text=${encodeURIComponent(whatsappMessage)}&type=phone_number&app_absent=0`
     window.open(url, '_blank')
@@ -38,8 +28,6 @@ Mesaj: ${formData.message}`
   }
 
   return {
-    trackWhatsAppClick,
-    trackPhoneClickEvent,
     openWhatsApp,
     formatWhatsAppMessage,
     contactInfo
