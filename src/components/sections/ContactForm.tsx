@@ -15,9 +15,10 @@ import {
   Zap
 } from "lucide-react"
 import { useWhatsApp } from "@/hooks/use-whatsapp"
+import { trackConversion } from "@/lib/gtm-events"
 
 export default function ContactForm() {
-  const { trackWhatsAppClick, trackPhoneClickEvent, contactInfo } = useWhatsApp()
+  const { contactInfo } = useWhatsApp()
 
   const features = [
     {
@@ -92,10 +93,10 @@ export default function ContactForm() {
                   <Phone className="w-5 h-5 text-primary mt-1" />
                   <div>
                     <p className="font-medium mb-1">Telefon</p>
-                    <a 
+                    <a
                       href={`tel:${contactInfo.phone.call}`}
                       className="text-muted-foreground hover:text-primary transition-colors"
-                      onClick={() => trackPhoneClickEvent(contactInfo.phone.call, 'contact_form_phone')}
+                      onClick={() => trackConversion()}
                     >
                       {contactInfo.phone.display}
                     </a>
@@ -109,12 +110,12 @@ export default function ContactForm() {
                     <p className="font-medium mb-1">
                       <span className="font-medium">WhatsApp:</span> 
                     </p>
-                    <a 
-                      href={`https://api.whatsapp.com/send/?phone=${contactInfo.phone.whatsapp}&text=${encodeURIComponent(contactInfo.whatsappMessages.support)}&type=phone_number&app_absent=0`} 
-                      target="_blank" 
+                    <a
+                      href={`https://api.whatsapp.com/send/?phone=${contactInfo.phone.whatsapp}&text=${encodeURIComponent(contactInfo.whatsappMessages.support)}&type=phone_number&app_absent=0`}
+                      target="_blank"
                       rel="noopener noreferrer"
                       className="text-primary hover:underline"
-                      onClick={() => trackWhatsAppClick('contact_form_link')}
+                      onClick={() => trackConversion()}
                     >
                       Hemen taksi çağır
                     </a>

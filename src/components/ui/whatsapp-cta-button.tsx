@@ -11,7 +11,6 @@ interface WhatsAppCTAButtonProps {
   size?: "default" | "sm" | "lg" | "icon"
   className?: string
   message?: string
-  trackingLocation: string
   disabled?: boolean
   showArrow?: boolean
   fullWidth?: boolean
@@ -24,7 +23,6 @@ export function WhatsAppCTAButton({
   size = "default",
   className,
   message,
-  trackingLocation,
   disabled = false,
   showArrow = true,
   fullWidth = false,
@@ -36,7 +34,7 @@ export function WhatsAppCTAButton({
     if (onClick) {
       onClick()
     }
-    openWhatsApp(message, trackingLocation)
+    openWhatsApp(message)
   }
 
   return (

@@ -126,7 +126,6 @@ export default function Benefits() {
           <div className="hidden md:flex flex-col sm:flex-row gap-4 justify-center">
             <WhatsAppCTAButton
               message={contactInfo.whatsappMessages.reservation}
-              trackingLocation="benefits_cta"
               size="lg"
               className="font-bold"
             >

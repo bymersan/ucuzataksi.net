@@ -125,14 +125,6 @@ export default function Services() {
                   className="mt-6 w-full group/btn"
                   variant={service.popular ? "default" : "outline"}
                   message={`Merhaba, ${service.title} hizmeti hakkında bilgi almak istiyorum.`}
-                  trackingLocation="service_card"
-                  onClick={() => {
-                    if (typeof window !== 'undefined' && window.dataLayer) {
-                      window.dataLayer.push({
-                        service_type: service.title
-                      })
-                    }
-                  }}
                   showArrow={false}
                 >
                   Hemen Ara
@@ -153,7 +145,6 @@ export default function Services() {
           </p>
           <WhatsAppCTAButton
             message={contactInfo.whatsappMessages.reservation}
-            trackingLocation="services_bottom_cta"
             size="lg"
             className="font-bold"
           >

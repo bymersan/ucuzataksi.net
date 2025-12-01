@@ -11,9 +11,10 @@ import { Card, CardContent } from "@/components/ui/card"
 import { motion } from "framer-motion"
 import { HelpCircle, MessageCircle } from "lucide-react"
 import { useWhatsApp } from "@/hooks/use-whatsapp"
+import { trackConversion } from "@/lib/gtm-events"
 
 export default function FAQ() {
-  const { trackWhatsAppClick, contactInfo } = useWhatsApp()
+  const { contactInfo } = useWhatsApp()
   const faqs = [
     {
       question: "İzmir ekonomik transfer hizmet alanları nerelerdir?",
@@ -129,10 +130,10 @@ export default function FAQ() {
                     <MessageCircle className="w-4 h-4" />
                     <span>Hemen Soru Sor</span>
                   </div>
-                  <div 
+                  <div
                     className="inline-flex items-center gap-2 border border-border font-medium px-8 py-4 rounded-lg hover:bg-muted/50 transition-colors cursor-pointer"
                     onClick={() => {
-                      trackWhatsAppClick('faq_whatsapp')
+                      trackConversion()
                       window.open(`https://api.whatsapp.com/send/?phone=${contactInfo.phone.whatsapp}&text=${encodeURIComponent(contactInfo.whatsappMessages.support)}&type=phone_number&app_absent=0`, '_blank')
                     }}
                   >

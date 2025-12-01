@@ -42,7 +42,6 @@ export default function Hero() {
             {/* CTA Buttons - Desktop Only */}
             <div className="hidden lg:flex w-full flex-col sm:flex-row gap-2 justify-center lg:justify-center">
               <WhatsAppCTAButton
-                trackingLocation="hero_main_cta"
                 className="w-full sm:w-auto"
               >
                 Şimdi Taksi Çağır

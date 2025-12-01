@@ -30,7 +30,7 @@ export default function Header() {
         <NavItems items={navigationItems} />
         <div className="flex items-center gap-4">
           <ThemeToggle />
-          <NavbarButton variant="primary" onClick={() => openWhatsApp(undefined, 'header_desktop')} className="font-black flex items-center gap-2">
+          <NavbarButton variant="primary" onClick={() => openWhatsApp()} className="font-black flex items-center gap-2">
             7/24 Taksi Çağır
             <div className="w-6 h-6 bg-primary rounded-full flex items-center justify-center">
               <ArrowRight className="w-3 h-3 text-primary-foreground rotate-180" />
@@ -72,7 +72,7 @@ export default function Header() {
             <NavbarButton
               onClick={() => {
                 setIsMobileMenuOpen(false);
-                openWhatsApp(undefined, 'header_mobile');
+                openWhatsApp();
               }}
               variant="primary"
               className="w-full font-black flex items-center gap-2 justify-center"
